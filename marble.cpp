@@ -1,14 +1,7 @@
-/*#include<iostream>
-	#include<algorithm>
-	using namespace std;
-	int maxt = 10000;
-
-	int main(){
-	int a, b, c[maxt],d;
-	cin >> a >> b >> c[a]>>d;
-	min[a]
-
-	}*/
+/*UVa10474大理石问题c++解法，输入M.N表示大理石数目和问题数目
+在输入M个数字，排序后寻找出最大的数字所在的位置，
+使用sort，和lower_bound两个函数
+*/
 	#include <iostream>
 	#include <algorithm>
 	using namespace std;
@@ -29,7 +22,7 @@
 			cout << "CASE#" << ++kess << endl;
 			while (cin >> x)
 			{
-				int p = lower_bound(a, a + m, x) - a;  //�������������a��Ѱ��x
+				int p = lower_bound(a, a + m, x) - a;  
 			//	cout << &a[5] << endl;
 				cout << "p:" << p << endl;
 				cout << a[p] << endl;
